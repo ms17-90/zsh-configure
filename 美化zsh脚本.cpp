@@ -6,6 +6,7 @@ int main() {
            system("makepkg -si");
           system("mv zshrc .zshrc");
          system("mv .zshrc /home/adm");
-        system("source ~/zshrc");
-       system("pacman -S fastfecth");     
+        system("chsh -s /usr/bin/zsh");
+       system("pacman -S fastfecth");
+    system("source .zshrc");
 }
